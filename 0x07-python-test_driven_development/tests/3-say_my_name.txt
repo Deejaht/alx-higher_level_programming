@@ -1,0 +1,28 @@
+>>> say_my_name = __import__("3-say_my_name").say_my_name
+
+>>> m = __import__('3-say_my_name').__doc__
+>>> len(m) > 1
+True
+
+>>> len(say_my_name.__doc__) > 1
+True
+
+>>> say_my_name("Good", "Dean")
+My name is Good Dean
+
+
+>>> say_my_name("why", None)
+Traceback (most recent call last):
+...
+TypeError: last_name must be a string
+
+>>> say_my_name(None, "None")
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
+
+
+>>> say_my_name("Ben", "Tne", "George")
+Traceback (most recent call last):
+...
+TypeError: say_my_name() takes from 1 to 2 positional arguments but 3 were given
