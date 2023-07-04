@@ -1,1 +1,1 @@
-# everything is object
+0x09. Python - Everything is object
