@@ -29,7 +29,7 @@ void hash_table_print(const hash_table_t *ht)
 
 					while (tempnode->next != NULL)
 					{
-						printf(" ,'%s': '%s'", tempnode->key, tempnode->value);
+						printf(", '%s': '%s'", tempnode->key, tempnode->value);
 						tempnode = tempnode->next;
 					}
 				}
