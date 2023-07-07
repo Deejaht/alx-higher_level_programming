@@ -19,6 +19,12 @@ hash_table_t *hash_table_create(unsigned long int size)
 
 	if (!new_table->array)
 	{
+		for (i = 0; i < size; i++)
+		{
+			free(new_table->array[i]->key);
+			free(new_table->array[i]->value);
+			free(new_table->array[i]);
+		}
 		free(new_table);
 		return (NULL);
 	}
