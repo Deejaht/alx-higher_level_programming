@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Implements a function that detects a subclass
+    """Implements a function that detects a subclass
     """
 
 
